@@ -12,29 +12,23 @@
             <img src="image/logo.jpg" alt="Smart Health Care">
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-            </ul>
+            <div class="nav-bar">
+                <ul>
+                    <li class="nav-1"><a href="index.html">Home</a></li>
+                    <li class="nav-2"><a href="login.html">Login</a></li>
+                <li class="nav-3"><a href="signup.html">Sign Up</a></li>
+                <li class="nav-2"><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main >
-        <h1>Welcome to Smart Health Care</h1>
-        <p>Your health is our priority.</p>
+    <main>
+        <div class="welcome-section">
+            <h1>Welcome to Health Care</h1>
+            <p class="tagline">Your health is our priority.</p>
+        </div>
         <section class="container">
             <div class="row">
-                <!-- Buy Medicines -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="image/medicine.jpg" class="card-img-top" alt="Medicines">
-                        <div class="card-body">
-                            <h5 class="card-title">Buy Medicines</h5>
-                            <p class="card-text">Get all your medicines delivered to your doorstep.</p>
-                            <a href="products.html" class="btn btn-primary">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
                 <!-- Consult a Doctor -->
                 <div class="col-md-4">
                     <div class="card">
@@ -42,7 +36,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Consult a Doctor</h5>
                             <p class="card-text">Book an appointment with top doctors.</p>
-                            <a href="consults.html" class="btn btn-primary">Consult Now</a>
+                            <a href="consults copy.html" class="btn btn-primary">Consult Now</a>
                         </div>
                     </div>
                 </div>
@@ -57,8 +51,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <!-- Telemedicine -->
                 <div class="col-md-4">
                     <div class="card">
@@ -70,34 +62,19 @@
                         </div>
                     </div>
                 </div>
-                <!-- AI Diagnosis Online -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="image/ai_daignosis.jpg" class="card-img-top" alt="AI Diagnosis">
-                        <div class="card-body">
-                            <h5 class="card-title">AI Diagnosis Online</h5>
-                            <p class="card-text">Get instant health insights using AI-powered diagnosis.</p>
-                            <a href="ai_diagnosis.html" class="btn btn-primary">Try Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Placeholder for Future Option -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="image/placeholder.jpg" class="card-img-top" alt="Future Option">
-                        <div class="card-body">
-                            <h5 class="card-title">More Services</h5>
-                            <p class="card-text">Explore more health services coming soon.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Smart Health Care. All rights reserved.</p>
+        <p>&copy; 2025  Health Care. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        // Logout functionality
+        document.getElementById('logout').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            alert('You have been logged out.'); // Optional: Show a confirmation message
+            window.close(); // Close the current window/tab
+        });
+    </script>
 </body>
 </html>

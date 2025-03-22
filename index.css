@@ -3,16 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 header {
-    background-color: #0b78ed;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
@@ -36,6 +38,26 @@ nav ul li a {
     text-decoration: none;
 
 }
+.welcome-section{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e3f2fd; /* Light blue background */
+    margin-bottom: 20px;
+
+}
+.welcome-section h1 {
+    font-size: 48px; /* Bigger font size */
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color */
+}
+
+.welcome-section .tagline {
+    font-size: 24px; /* Larger font size */
+    color: #333;
+    font-weight: bold;
+}
+
+
 
 main {
     padding: 20px;
@@ -122,4 +144,51 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+.nav-bar ul {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    gap: 25px; /* Adjust the gap size */
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.nav-bar ul .nav-1, 
+.nav-bar ul .nav-2, 
+.nav-bar ul .nav-3 {
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add some padding inside */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for each nav item */
+.nav-bar ul .nav-1:hover,
+.nav-bar ul .nav-2:hover,
+.nav-bar ul .nav-3:hover {
+    background-color: #ffffff43; /* White background on hover */
+    color: #0b78ed; /* Change text color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 36px;
+    }
+
+    .welcome-section .tagline {
+        font-size: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        max-width: 100%;
+    }
 }

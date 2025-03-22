@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #2196F3; /* Changed to blue */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav .nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-bar ul li {
+    margin-left: 20px;
+}
+
+nav .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .nav-bar ul li a:hover {
+    color: #ffeb3b; /* Keep the yellow hover color for contrast */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2196F3; /* Changed to blue */
+    margin-bottom: 20px;
+}
+
+/* Payment Details Section */
+.payment-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.payment-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.payment-details strong {
+    color: #2196F3; /* Changed to blue */
+}
+
+/* Payment Options Section */
+.payment-options {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-options h2 {
+    text-align: center;
+    color: #2196F3; /* Changed to blue */
+    margin-bottom: 20px;
+}
+
+.payment-options .payment-method {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #2196F3; /* Changed to blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-options .payment-method:hover {
+    background-color: #1976D2; /* Darker blue for hover */
+    transform: scale(1.05);
+}
+
+.payment-options .payment-method:active {
+    transform: scale(0.95);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2196F3; /* Changed to blue */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .nav-bar ul {
+        flex-direction: column;
+    }
+
+    nav .nav-bar ul li {
+        margin: 10px 0;
+    }
+
+    .payment-details p {
+        font-size: 16px;
+    }
+
+    .payment-options .payment-method {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .payment-details p {
+        font-size: 14px;
+    }
+
+    .payment-options .payment-method {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+.nav-bar ul .nav-1, 
+.nav-bar ul .nav-2, 
+.nav-bar ul .nav-3 {
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add some padding inside */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for each nav item */
+.nav-bar ul .nav-1:hover,
+.nav-bar ul .nav-2:hover,
+.nav-bar ul .nav-3:hover {
+    background-color: #ffffff43; /* White background on hover */
+    color: #0b78ed; /* Change text color to blue */
+    cursor: pointer; /* Change cursor to pointer */
+}
