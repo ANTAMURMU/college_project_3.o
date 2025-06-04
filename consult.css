@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #87CEEB; /* Light blue */
+    background-color: #0da5e0; /* Light blue */
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -91,7 +91,7 @@ h1 {
 }
 
 .doctor-card button {
-    background-color: #1E90FF; /* Blue */
+    background-color: #087aec; /* Blue */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -102,7 +102,7 @@ h1 {
 }
 
 .doctor-card button:hover {
-    background-color: #187bcd; /* Darker blue */
+    background-color: #0ceb69; /* Darker blue */
 }
 
 /* Modal Styles */
@@ -144,7 +144,7 @@ h1 {
 
 .modal-content h2 {
     margin-bottom: 20px;
-    color: #1E90FF; /* Blue */
+    color: #0978e8; /* Blue */
 }
 
 .modal-content form {
@@ -166,7 +166,7 @@ h1 {
 }
 
 .modal-content form button {
-    background-color: #1E90FF; /* Blue */
+    background-color: #0b77e3; /* Blue */
     color: white;
     border: none;
     padding: 10px;
@@ -177,7 +177,7 @@ h1 {
 }
 
 .modal-content form button:hover {
-    background-color: #187bcd; /* Darker blue */
+    background-color: #0882e6; /* Darker blue */
 }
 
 /* Payment Summary and Payment Options Styles */
@@ -193,7 +193,7 @@ h1 {
 
 #payment-summary button,
 #payment-options button {
-    background-color: #1E90FF; /* Blue */
+    background-color: #0a79e9; /* Blue */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -210,7 +210,7 @@ h1 {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #135bed;
     color: white;
     text-align: center;
     padding: 10px 0;

@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment - Smart Health Care</title>
     <link rel="stylesheet" href="payment.css">
+    <style>
+        /* Add CSS for the payment box and footer */
+        .payment-box {
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        #back-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        #back-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,14 +48,14 @@
                 <ul>
                     <li class="nav-1"><a href="index.html">Home</a></li>
                     <li class="nav-2"><a href="login.html">Login</a></li>
-                <li class="nav-3"><a href="signup.html">Sign Up</a></li>
+                    <li class="nav-3"><a href="signup.html">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <h1>Payment</h1>
-        <div id="payment-details">
+        <div class="payment-box" id="payment-details">
             <p><strong>Department/Specialty:</strong> <span id="payment-department"></span></p>
             <p><strong>Appointment Date:</strong> <span id="payment-date"></span></p>
             <p><strong>Appointment Time:</strong> <span id="payment-time"></span></p>
@@ -32,10 +64,11 @@
             <p><strong>Total Fee:</strong> ₹500</p>
         </div>
         <button id="make-payment">Proceed to Payment</button>
+        <button id="back-button" onclick="window.location.href='appointments.html'">Back</button>
     </main>
     <footer>
-        <p>&copy; 2025 Smart Health Care. All rights reserved.</p>
+        <p>&copy; 2025  Health Care. All rights reserved.</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="payment.js"></script>
 </body>
 </html>

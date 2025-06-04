@@ -5,10 +5,11 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    background-color: darkolivegreen;
 }
 
 header {
-    background-color: #2196F3; /* Blue */
+    background-color: #1088ea; /* Blue */
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -49,7 +50,7 @@ main {
 
 h1 {
     text-align: center;
-    color: #2196F3; /* Blue */
+    color: #0e85e6; /* Blue */
     margin-bottom: 20px;
 }
 
@@ -81,12 +82,12 @@ form button {
 
 form input:focus,
 form select:focus {
-    border-color: #2196F3; /* Blue */
+    border-color: #0b84e7; /* Blue */
     outline: none;
 }
 
 form button {
-    background-color: #2196F3; /* Blue */
+    background-color: #0e86e8; /* Blue */
     color: white;
     border: none;
     cursor: pointer;
@@ -95,12 +96,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #1976D2; /* Darker blue */
+    background-color: #0b7beb; /* Darker blue */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #1067e1;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -109,6 +110,23 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.nav-bar ul .nav-1, 
+.nav-bar ul .nav-2, 
+.nav-bar ul .nav-3 {
+  border: 2px solid var(--base-color);
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-bar ul .nav-1:hover,
+.nav-bar ul .nav-2:hover,
+.nav-bar ul .nav-3:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Responsive Design */
@@ -144,21 +162,4 @@ footer p {
     form select,
     form button {
         font-size: 0.9em;
-    }
-}
-.nav-bar ul .nav-1, 
-.nav-bar ul .nav-2, 
-.nav-bar ul .nav-3 {
-  border: 1px solid var(--base-color);
-  border-radius: 10px;
-  padding: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-bar ul .nav-1:hover,
-.nav-bar ul .nav-2:hover,
-.nav-bar ul .nav-3:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--accent-color);
-  cursor: pointer;
-}
+    }}
